@@ -3,7 +3,7 @@
 
   const items = [
     { url: "/", label: "Página inicial" },
-    { url: "/docs", label: "Documentação" },
+    { url: "/docs/get-started/introduction", label: "Documentação" },
   ];
 </script>
 

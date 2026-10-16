@@ -5,11 +5,11 @@
 </script>
 
 {#if typeof text === "string"}
-  <p class="text-[14px]">
+  <p class="text-[13px] text-justify">
     {text}
   </p>
 {:else}
-  <div class="text-[14px]">
+  <div class="text-[13px] text-justify">
     {@render text()}
   </div>
 {/if}

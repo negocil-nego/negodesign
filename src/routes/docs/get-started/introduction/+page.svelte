@@ -3,8 +3,9 @@
   import FrameworkSupport from "#lib/components/_shared/ui/FrameworkSupport.svelte";
   import SidebarMenuRight from "#lib/components/sidebar/ui/SidebarMenuRight.svelte";
   import ParagraphText from "#lib/components/typography/ParagraphText.svelte";
+  import ParagraphTextHighlight from "#lib/components/typography/ParagraphTextHighlight.svelte";
   import SubtitleText from "#lib/components/typography/SubtitleText.svelte";
-  import TitleText from "#lib/components/typography/TitleText.svelte";
+  import TitleTextButton from "#lib/components/typography/TitleTextButton.svelte";
 
   const menu = [
     { label: "Introdução", id: "introducao" },
@@ -15,7 +16,10 @@
 
 <SidebarMenuRight {menu}>
   <div id="introducao" class="scroll-mt-6">
-    <TitleText text="Introdução" />
+    <TitleTextButton
+      text="Introdução"
+      urlNext="/docs/get-started/installation"
+    />
   </div>
 
   <div class="space-y-3 md:space-y-5">
@@ -77,6 +81,10 @@
         >
       {/snippet}
     </ParagraphText>
+
+    <ParagraphTextHighlight
+      text="Este projeto foi desenvolvido exclusivamente com HTML5, CSS3 e JavaScript, sem a utilização de pacotes ou bibliotecas externas. A proposta foi aproveitar ao máximo os recursos nativos dessas tecnologias para construir todos os componentes da aplicação."
+    />
   </div>
 
   <div
