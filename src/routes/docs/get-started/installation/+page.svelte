@@ -4,6 +4,7 @@
   import TerminalCopy from "#lib/components/_shared/ui/mockup/terminal/TerminalCopy.svelte";
   import SidebarMenuRight from "#lib/components/sidebar/ui/SidebarMenuRight.svelte";
   import ParagraphText from "#lib/components/typography/ParagraphText.svelte";
+  import ParagraphTextHighlightInfo from "#lib/components/typography/ParagraphTextHighlightInfo.svelte";
   import SubtitleText from "#lib/components/typography/SubtitleText.svelte";
   import TitleTextButton from "#lib/components/typography/TitleTextButton.svelte";
 
@@ -63,11 +64,19 @@
       text="Para esta opção basta clicar no botão copiar que ele irá te apresenta um modal para visualizar a estrutura de depedência do componente."
     />
 
+    <ParagraphTextHighlightInfo
+      text="O modal de copiar e colar permite adicionar os nossos componentes ao seu projeto. Ao selecionar esta opção, os componentes são disponibilizados num ficheiro ZIP para download, que deve ser descompactado no diretório do seu projeto."
+    />
+
     <TerminalCopy />
   </div>
 
   <div id="terminal-cli" class="mt-5 scroll-mt-6">
     <SubtitleText text="Terminal" />
+
+    <ParagraphText
+      text="Para utilizar esta opção, clique no botão Terminal. Um modal será aberto com os comandos de CLI necessários para adicionar os nossos componentes ao seu projeto."
+    />
 
     <TerminalCLI />
   </div>

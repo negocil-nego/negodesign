@@ -4,6 +4,7 @@
   import SidebarMenuRight from "#lib/components/sidebar/ui/SidebarMenuRight.svelte";
   import ParagraphText from "#lib/components/typography/ParagraphText.svelte";
   import ParagraphTextHighlight from "#lib/components/typography/ParagraphTextHighlight.svelte";
+  import ParagraphTextHighlightInfo from "#lib/components/typography/ParagraphTextHighlightInfo.svelte";
   import SubtitleText from "#lib/components/typography/SubtitleText.svelte";
   import TitleTextButton from "#lib/components/typography/TitleTextButton.svelte";
 
@@ -84,6 +85,10 @@
 
     <ParagraphTextHighlight
       text="Este projeto foi desenvolvido exclusivamente com HTML5, CSS3 e JavaScript, sem a utilização de pacotes ou bibliotecas externas. A proposta foi aproveitar ao máximo os recursos nativos dessas tecnologias para construir todos os componentes da aplicação."
+    />
+
+    <ParagraphTextHighlightInfo
+      text="Este projeto pode ser uma alternativa ao shadcn/ui. Em vez de fornecer uma biblioteca, seguimos uma filosofia de copiar e colar: você reaproveita apenas o código de que precisa. O nosso objetivo é disponibilizar componentes legíveis e fáceis de modificar, para que possas adaptá-los às tuas necessidades."
     />
   </div>
 
