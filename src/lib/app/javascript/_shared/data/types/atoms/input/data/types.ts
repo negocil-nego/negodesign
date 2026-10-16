@@ -1,4 +1,5 @@
 import type { HtmlProps } from "../../../../type";
+import type { LabelProps } from "../../label/types";
 
 export type InputType =
     | 'text'
@@ -20,4 +21,9 @@ export type InputProps = HtmlProps & {
     disabled?: boolean
     placeholder?: string
     value?: string
+};
+
+export type InputWithoutLabelProps = HtmlProps & {
+    labelProps?: LabelProps;
+    inputProps: InputProps;
 };

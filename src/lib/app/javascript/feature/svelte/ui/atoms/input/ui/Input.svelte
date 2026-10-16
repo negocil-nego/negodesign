@@ -4,4 +4,4 @@
   let { type, required, disabled, placeholder, value }: InputProps = $props();
 </script>
 
-<input {type} {required} {disabled} {placeholder} {value} />
+<input {type} {required} {disabled} {placeholder} {value} data-name="label" />

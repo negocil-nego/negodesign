@@ -1,7 +1,3 @@
-import type { InputProps } from "#lib/app/javascript/_shared/data/types/atoms/input/data/types.ts";
-import type { LabelProps } from "../../../label/types";
+import type { InputWithoutLabelProps } from "../../data/types";
 
-export type InputEmailProps = {
-    labelProps?: LabelProps;
-    inputProps: InputProps;
-};
+export type InputEmailProps = InputWithoutLabelProps;
