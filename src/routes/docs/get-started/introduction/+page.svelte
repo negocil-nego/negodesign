@@ -164,5 +164,9 @@
         e do que fazem.
       </li>
     </ul>
+
+    <ParagraphTextHighlightInfo
+      text="Recomendamos que façam fork e podem trabalhar no fork para depois caso o projecto para os seus projectos, porque o projecto principal o processo de colaboração é rigoroso"
+    />
   </div>
 </SidebarMenuRight>

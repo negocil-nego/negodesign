@@ -2,6 +2,7 @@
   import TerminalApp from "#lib/components/_shared/ui/mockup/terminal/TerminalApp.svelte";
   import TerminalCLI from "#lib/components/_shared/ui/mockup/terminal/TerminalCLI.svelte";
   import TerminalCopy from "#lib/components/_shared/ui/mockup/terminal/TerminalCopy.svelte";
+  import TerminalCliSupport from "#lib/components/_shared/ui/TerminalCliSupport.svelte";
   import SidebarMenuRight from "#lib/components/sidebar/ui/SidebarMenuRight.svelte";
   import ParagraphText from "#lib/components/typography/ParagraphText.svelte";
   import ParagraphTextHighlightInfo from "#lib/components/typography/ParagraphTextHighlightInfo.svelte";
@@ -71,18 +72,32 @@
     <TerminalCopy />
   </div>
 
-  <div id="terminal-cli" class="mt-5 scroll-mt-6">
+  <div id="terminal-cli" class="mt-5 scroll-mt-6 space-y-3">
     <SubtitleText text="Terminal" />
 
     <ParagraphText
       text="Para utilizar esta opção, clique no botão Terminal. Um modal será aberto com os comandos de CLI necessários para adicionar os nossos componentes ao seu projeto."
     />
 
+    <TerminalCliSupport />
+
     <TerminalCLI />
   </div>
 
-  <div id="application-desktop" class="mt-5 scroll-mt-6">
+  <div id="application-desktop" class="mt-5 scroll-mt-6 space-y-3">
     <SubtitleText text="Aplicação" />
+
+    <ParagraphText
+      text="Para utilizar esta opção, faça o download da nossa aplicação desktop, compatível com o seu sistema operativo. A aplicação disponibiliza todos os componentes do projeto e permite pré-visualizar, adicionar e configurar cada componente de forma rápida e profissional."
+    />
+
+    <ParagraphText
+      text="Quando clicando no botão do aplicativo irá apresentar um modal que irá apresentar por onde recurso de encontra no aplicativo clicando direitamente no botão de conexão irá abrir o programa no devido recurso."
+    />
+
+    <ParagraphTextHighlightInfo
+      text="Este programa trás muitos recurso de desenvolvimento que pode facilitar o seu dia a dia como programador ou não"
+    />
 
     <TerminalApp />
   </div>
